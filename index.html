@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!-- Basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- Mobile Metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <!-- Site Metas -->
+   <title>Petto - Bootstrap 4 Html Template</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- site icon -->
+   <link rel="icon" href="images/fevicon.png" type="image/png" />
+   <!-- Bootstrap core CSS -->
+   <link href="css/bootstrap.css" rel="stylesheet">
+   <!-- FontAwesome Icons core CSS -->
+   <link href="css/font-awesome.min.css" rel="stylesheet">
+   <!-- Custom animate styles for this template -->
+   <link href="css/animate.css" rel="stylesheet">
+   <!-- Custom styles for this template -->
+   <link href="style.css" rel="stylesheet">
+   <!-- Responsive styles for this template -->
+   <link href="css/responsive.css" rel="stylesheet">
+   <!-- Colors for this template -->
+   <link href="css/colors.css" rel="stylesheet">
+   <!-- light box gallery -->
+   <link href="css/ekko-lightbox.css" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,700;1,6..12,700&display=swap" rel="stylesheet">   
+   <style>
+      #chartdiv {
+        width: 100%;
+        height: 500px;
+      }
+      
+      </style>
+      
+      <!-- Resources -->
+      <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+      <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+      <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+      
+      <!-- Chart code -->
+      <script>
+      am4core.ready(function() {
+      
+      // Themes begin
+      am4core.useTheme(am4themes_animated);
+      // Themes end
+      
+      var chart = am4core.create("chartdiv", am4charts.PieChart3D);
+      chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
+      
+      chart.legend = new am4charts.Legend();
+      
+      chart.data = [
+      {
+         category: 'Presale',
+         tokens: 10000000
+     }, {
+         category: 'Pre ICO Sale',
+         tokens: 10000000
+     }, {
+         category: 'ICO',
+         tokens: 10000000
+     }, {
+         category: 'Team',
+         tokens: 20000000
+     }, {
+         category: 'LTF',
+         tokens: 20000000
+     }, {
+         category: 'Ecosystem',
+         tokens: 15000000
+     }, {
+         category: 'Marketing',
+         tokens: 4000000
+     }, {
+         category: 'Advisors',
+         tokens: 5000000
+     }, {
+         category: 'Launchpad',
+         tokens: 3000000
+     }, {
+         category: 'Airdrop',
+         tokens:3000000
+     }
+      ];
+      
+      var series = chart.series.push(new am4charts.PieSeries3D());
+      series.dataFields.value = "tokens";
+      series.dataFields.category = "category";
+      
+      }); // end am4core.ready()
+      </script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="./js/custom-script.js"></script>
+   <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+   <style>
+     .background-header {
+       background: #333; /* Example background color */
+     }
+     .header-area .nav {
+       display: flex;
+       list-style: none;
+     }
+     .header-area .nav a.active {
+       color: red; /* Example active link color */
+     }
+   </style>
+   <!--[if lt IE 9]>
+   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+   <![endif]-->
+   </head>
+   <body id="home_page" class="home_page">
+      <!-- loader -->
+      <div id="preloader">
+         <img class="preloader" src="images/loader.gif" alt="">
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header
+      class="header-area header-sticky wow slideInDown"
+      data-wow-duration="0.75s"
+      data-wow-delay="0s"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="index.html" class="logo">
+               <img class="navbarimg" src="images/pc.png" alt="#" />
+            </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li class="scroll-to-section">
+                  <a href="#top" class="active">Home</a>
+                </li>
+                <li class="scroll-to-section"><a href="#aboutus">About us</a></li>
+                <li class="scroll-to-section">
+                  <a href="#services">Services</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="#utility">Utility</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="#tokenomics">Tokenomics</a>
+                </li>
+                <li class="scroll-to-section">
+                  <div class="main-red-button">
+                    <a href="#contact">Contact Now</a>
+                  </div>
+                </li>
+              </ul>
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+has context menu
+      <!-- end header -->
+      <!-- slider -->
+      <section class="slider_section bgi">
+         <div class="container-fluid" id="top">
+            <div class="row">
+               <div id="main_slider" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
+                  <div class="carousel-inner">
+                     <div class="carousel-item slider_inner slider2 active">
+                        <div class="container">
+                           <div class="row">
+                              <div class="slider_coint_inner">
+                                 <h3 class="h3tex">Petchain</h3>
+
+                                 <h3 class="h3te">Let’s take care<br>of our pets</h3>
+                                 <p>-Best Place for your pet..!</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                 
+                  </div>
+             
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end slider -->
+      <!-- about section -->
+      <section class="layout_padding section padding_bottom_0" id="aboutus">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-5 col-md-4 col-sm-12">
+                  <div class="about_img">
+                     <img class="ssss" src="images/de.jpg" alt="#" />
+                  </div>
+                  <img class="sss" src="images/robodog.jpg"/>
+
+               </div>
+               <div class="col-lg-7 col-md-8 col-sm-12 pt topm ">
+                  <div class="full heading_s1 ">
+                     <h2><img class="ico" src="images/icon_head_white.png" alt="#"> <span class="abttt">About us</span></h2>
+                  </div>
+                  
+                  <div class="full">
+                     <h3 class="margin_top_30 txxt">Welcome to Petchain</h3>
+                  </div>
+                  <div class="full">
+                     <p class="large">PetChain is transforming pet care with blockchain technology, offering secure<br/> and transparent solutions for pet identification and health tracking.<br/> Our key features include Decentralized Pet Identity Management, Immutable <br/>Health Records, and Smart Contracts for Transactions. Join us in creating a <br/>reliable and efficient ecosystem for pets and their owners.
+                     </p>
+                     <div class="readmore_bt margin_top_30">
+                        <a class="main_bt read_more_bt" href="https://drive.google.com/file/d/1h7kuFxSXg1VpCjRE_gVdVtQ8juCTvtM1/view?usp=drive_link"> Read Whitepaper ></a>
+                     </div>
+                  </div>
+               </div>
+              
+            </div>
+         </div>
+      </section>
+      <!-- end about section -->
+      <!-- counter section -->
+   
+      <!-- end counter section -->
+      <!-- pets family section -->
+      <section class="tu" >
+         <div class="full heading_s2 text_align_center margin_bottom_50">
+             <h2><img src="images/icon_head.png" alt="#"><br><span>Token Utility</span></h2>
+     </div>
+      <div class="containerr">
+      <div class="card">
+      <div class="content">
+        <div class="back">
+         
+          <div class="back-content">
+            <div class="card__image-container">
+               <img src="images/std.jpg" alt="Card Image" class="card__image img-fluid">
+   
+       </div>
+            <strong class="pet">Verified Pets</strong>
+          </div>
+        </div>
+        <div class="front">
+          
+          <div class="img">
+            <div class="circle">
+            </div>
+            <div class="circle" id="right">
+            </div>
+            <div class="circle" id="bottom">
+            </div>
+          </div>
+    
+          <div class="front-content">
+            <small class="badge">Token Utility</small>
+            <div class="description">
+               <strong>Tokens are used to pay for the verification process and recording pet information on the blockchain, ensuring authenticity and transparency.</strong>
+   
+              <div class="title">
+                <p class="title">
+                </p>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <div class="back">
+         
+          <div class="back-content">
+            <div class="card__image-container">
+               <img src="images/nft.jpg" alt="Card Image" class="card__image img-fluid">
+   
+       </div>
+            <strong class="pet">NFT</strong>
+          </div>
+        </div>
+        <div class="front">
+          
+          <div class="img">
+            <div class="circle">
+            </div>
+            <div class="circle" id="right">
+            </div>
+            <div class="circle" id="bottom">
+            </div>
+          </div>
+    
+          <div class="front-content">
+            <small class="badge">Token Utility</small>
+            <div class="description">
+               <strong>Tokens are used to mint NFTs representing pets, providing unique digital ownership attached the particular pet and enhancing the pet adoption experience.</strong>
+   
+              <div class="title">
+                <p class="title">
+                </p>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <div class="back">
+         
+          <div class="back-content">
+            <div class="card__image-container">
+               <img src="images/disc.jpg" alt="Card Image" class="card__image img-fluid">
+   
+       </div>
+            <strong class="pett">Rewards & Bounties</strong>
+          </div>
+        </div>
+        <div class="front">
+          
+          <div class="img">
+            <div class="circle">
+            </div>
+            <div class="circle" id="right">
+            </div>
+            <div class="circle" id="bottom">
+            </div>
+          </div>
+    
+          <div class="front-content">
+            <small class="badge">Token Utility</small>
+            <div class="description">
+               <strong>Tokens are awarded as rewards to users who help locate and reunite lost pets and their owners, incentivizing community participation in pet recovery effects.</strong>
+   
+              <div class="title">
+                <p class="title">
+                </p>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <div class="back">
+         
+          <div class="back-content">
+            <div class="card__image-container">
+               <img src="images/sub.jpg" alt="Card Image" class="card__image img-fluid">
+   
+       </div>
+            <strong class="pet">Subscription</strong>
+          </div>
+        </div>
+        <div class="front">
+          
+          <div class="img">
+            <div class="circle">
+            </div>
+            <div class="circle" id="right">
+            </div>
+            <div class="circle" id="bottom">
+            </div>
+          </div>
+    
+          <div class="front-content">
+            <small class="badge">Token Utility</small>
+            <div class="description">
+               <strong>Tokens can be used to purchase a one-year subscription for access to premium community features. Using a certain amount of token, the subscription is bought</strong>
+   
+              <div class="title">
+                <p class="title">
+                </p>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <div class="back">
+         
+          <div class="back-content">
+            <div class="card__image-container">
+               <img src="images/dis.jpg" alt="Card Image" class="card__image img-fluid">
+   
+       </div>
+            <strong class="pet">Discounts</strong>
+          </div>
+        </div>
+        <div class="front">
+          
+          <div class="img">
+            <div class="circle">
+            </div>
+            <div class="circle" id="right">
+            </div>
+            <div class="circle" id="bottom">
+            </div>
+          </div>
+    
+          <div class="front-content">
+            <small class="badge">Token Utility</small>
+            <div class="description">
+               <strong>Tokens can be redeemed for discounts on various platform services, such as premium listings, advertising, and promotional features, enhancing visibility and reach for users.</strong>
+   
+              <div class="title">
+                <p class="title">
+                </p>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <div class="back">
+         
+          <div class="back-content">
+            <div class="card__image-container">
+               <img src="images/g6.png" alt="Card Image" class="card__image img-fluid">
+   
+       </div>
+            <strong class="pet">Event Access</strong>
+          </div>
+        </div>
+        <div class="front">
+          
+          <div class="img">
+            <div class="circle">
+            </div>
+            <div class="circle" id="right">
+            </div>
+            <div class="circle" id="bottom">
+            </div>
+          </div>
+    
+          <div class="front-content">
+            <small class="badge">Token Utility</small>
+            <div class="description">
+               <strong>Tokens can be used to gain entry to exclusive events, such as virtual meetups, pet shows, training workshops, and community gatherings.</strong>
+   
+              <div class="title">
+                <p class="title">
+                </p>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    </div>
+   
+   </section>
+      <!-- end pets family section -->
+      <!-- service section -->
+      <section class="layout_padding services_section yellow_bg pettr" id="services">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="full heading_s2 text_align_center margin_bottom_50">
+                     <h2><img src="images/icon_head.png" alt="#"><br><span>Our Services</span></h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row margin_bottom_30">
+               <div class="col-xl-9 forward-on-hover">
+                  <div class="row service_blog">
+                      <div class="col-md-5 col-lg-5 service_img">
+                          <img class="rounded-circle img-responsive  glow-on-hover" src="images/sr1.png" alt="#" />
+                      </div>
+                      <div class="col-md-7 col-lg-7">
+                          <h3>Verified Pets</h3>
+                          <p class="large_1">Verification of pets is crucial to ensure their authenticity, health, and ethical treatment. It eliminates the risk of fraud, such as selling fake or unhealthy pets, and guarantees that the pets come from reputable sources. Verified information on a pet's origin, health records, and ownership history provides transparency and trust for buyers, promoting responsible pet adoption and fostering confidence in the pet ecosystem.</p>
+                      </div>
+                  </div>
+              </div>
+              
+               <div class="col-xl-3">
+               </div>
+            </div>
+            <div class="row margin_bottom_30">
+               <div class="col-xl-3 ">
+               </div>
+               <div class="col-xl-9 forward-on-hover">
+                  <div class="row service_blog">
+                     <div class="col-md-5 col-lg-5 service_img"> 
+                        <img class="rounded-circle img-responsive glow-on-hover" src="images/vet.jpg" alt="#" />
+                     </div>
+                     <div class="col-md-7 col-lg-7">
+                        <h3>Pet health care</h3>
+                        <p class="large_1">Petchain simplifies the management of your pet's health care needs by offering comprehensive scheduling for vaccinations, check-ups, and ongoing health monitoring, as well as access to reliable veterinary care. </p>
+                       
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row margin_bottom_30">
+               <div class="col-xl-9 forward-on-hover">
+                  <div class="row service_blog">
+                     <div class="col-md-5 col-lg-5 service_img"> 
+                        <img class="rounded-circle img-responsive glow-on-hover" src="images/sr3.png" alt="#" />
+                     </div>
+                     <div class="col-md-7 col-lg-7">
+                        <h3>Pet Market</h3>
+                        <p class="large_1">Petchain hosts a versatile marketplace where users can buy and sell pets, as well as a wide range of pet products. </p>
+                       
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-3">
+               </div>
+            </div>
+            <div class="row margin_bottom_30">
+               <div class="col-xl-3 ">
+               </div>
+               <div class="col-xl-9 forward-on-hover">
+                  <div class="row service_blog">
+                     <div class="col-md-5 col-lg-5 service_img"> 
+                        <img class="rounded-circle img-responsive glow-on-hover" src="images/wash.jpg" alt="#" />
+                     </div>
+                     <div class="col-md-7 col-lg-7">
+                        <h3>Pet Grooming</h3>
+                        <p class="large_1">Petchain connects pet owners with nearby grooming salons or offers the option to book home grooming services. </p>
+                     
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xl-9 forward-on-hover">
+                  <div class="row service_blog">
+                     <div class="col-md-5 col-lg-5 service_img"> 
+                        <img class="rounded-circle img-responsive glow-on-hover" src="images/flat.jpg" alt="#" />
+                     </div>
+                     <div class="col-md-7 col-lg-7">
+                        <h3>Pet Community</h3>
+                        <p class="large_1">Petchain fosters a vibrant community through various interactive features. Real-time chats allow pet owners to communicate with each other and service providers, sharing tips and advice. </p>
+                      
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-3">
+               </div>
+            </div>
+            <div class="row margin_bottom_30">
+               <div class="col-xl-3 ">
+               </div>
+               <div class="col-xl-9 forward-on-hover">
+                  <div class="row service_blog">
+                     <div class="col-md-5 col-lg-5 service_img"> 
+                        <img class="rounded-circle img-responsive glow-on-hover" src="images/ado.jpg" alt="#" />
+                     </div>
+                     <div class="col-md-7 col-lg-7">
+                        <h3>Adoption Services</h3>
+                        <p class="large_1">Petchain supports animal adoption by offering an extensive database of adoptable pets, including dogs, cats, birds, reptiles, and small furry creatures </p>
+                      
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xl-9 forward-on-hover">
+                  <div class="row service_blog">
+                     <div class="col-md-5 col-lg-5 service_img"> 
+                        <img class="rounded-circle img-responsive glow-on-hover" src="images/pt4.png" alt="#" />
+                     </div>
+                     <div class="col-md-7 col-lg-7">
+                        <h3>Pet Socialisation</h3>
+                        <p class="large_1">Petchain provides comprehensive solutions for dog training, walking, and social interaction. Professional trainers offer both in-person and virtual sessions, covering everything from basic obedience to advanced agility training, catering to all breeds and temperaments. </p>
+                      
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-3">
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end service section -->
+      <!-- gallery section -->
+     
+     
+      <!-- end gallery section -->
+      <!-- testimonial section -->
+      <section class="layout_padding dark-section testimonial_section" id="tokenomics">
+         <div class=" full text_align_center ">
+            <h2><img src="images/icon_head.png" alt="#"><br><span class="headingg_s2">Tokenomics</span></h2>
+            <div id="chartdiv"></div>
+
+          
+         </div>
+       
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 white_fonts">
+                
+                  
+               </div>
+            </div>
+           
+         </div>
+      </section>
+      <!-- end testimonial section -->
+      <!-- price table section -->
+  
+      <!-- end price table section -->
+      <!-- subscribe newsletter -->
+      <section class="layout_padding subscribe_newsletters yellow_bg pettr">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-7 col-md-12">
+                  <div class="full">
+                     <h3>Join Us</h3>
+                     <p>Join to get early updates</p>
+                  </div>
+               </div>
+               <div class="col-lg-5 col-md-12">
+                  <div class="full subscribe_bottom">
+                     <form class="subscribe_form float-right">
+                        <fieldset>
+                           <div class="field">
+                              <input type="text" name="subscribe_field" placeholder="Enter your Email...." />
+                              <button>Subscribe</button>
+                           </div>
+                        </fieldset>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- subscribe newsletter -->
+      <!-- footer -->
+      <footer class="footer layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4 col-sm-12">
+                  <div class="footer_blog1">
+                     <div class="footer_logo"><a href="index.html">               <img class="navbarimgg" src="images/pc.png" alt="#" />
+                     </a></div>
+                     <p>Sed ut perspiciatis unde omnis iste natus<br>error sit voluptatem accusantium doloremque<br>laudantium, totam rem aperiam,<br>eaque ipsa quae ab illo....</p>
+                     <div class="footer_social_icon">
+                        <ul>
+                           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                           <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                           <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-12">
+                  <div class="footer_link_heading">
+                     <h3>Useful Links</h3>
+                  </div>
+                  <div class="footer_blog2">
+                     <ul>
+                        <li><a href="index.html">> Home</a></li>
+                        <li><a href="adopt_gallery.html">> Adopt</a></li>
+                        <li><a href="gallery.html">> Gallery</a></li>
+                        <li><a href="services.html">> Services</a></li>
+                        <li><a href="price.html">> Price</a></li>
+                        <li><a href="blog.html">> Blog</a></li>
+                        <li><a href="contact.html">> Contact</a></li>
+                     </ul>
+                     <ul>
+                        <li><a href="term_conditions.html">> Terms & Conditions</a></li>
+                        <li><a href="privacy_policy.html">> Privacy Policy</a></li>
+                        <li><a href="index.html">> Cookies</a></li>
+                        <li><a href="team.html">> Team</a></li>
+                        <li><a href="gallery.html">> Gallery</a></li>
+                        <li><a href="404_error.html">> 404 Error</a></li>
+                        <li><a href="faq.html">> Faq</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-12">
+                  <div class="footer_link_heading">
+                     <h3>Contact Us</h3>
+                  </div>
+                  <div class="address_infor">
+                     <p> 
+                        <span class="icon"><img src="images/location.png" alt="#" /></span>
+                        <span class="addrs">123 Second Street Fifth Avenue,<br>Manhattan, New York</span>
+                     </p>
+                     <p> 
+                        <span class="icon"><img src="images/phone.png" alt="#" /></span>
+                        <span class="addrs">123 Second Street Fifth Avenue,<br>Manhattan, New York</span>
+                     </p>
+                  </div>
+                  <div class="email_address_bottom">
+                     <form>
+                        <fieldset>
+                           <div class="field_email">
+                              <input type="email" name="email" placeholder="Email" />
+                              <button><i class="fa fa-search"></i></button>
+                           </div>
+                        </fieldset>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- copyright section -->
+      <div class="copyright">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <p>Copyright © 2021. All Rights Reserved.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end copyright section -->
+      <div class="dmtop">Scroll to Top</div>
+      <!-- Core JavaScript
+         ================================================== -->
+      <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.min.js"></script>
+      <script src="js/tether.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/parallax.js"></script>
+      <script src="js/animate.js"></script>
+      <script src="js/ekko-lightbox.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="js/templatemo-custom.js"></script>
+      <script src="js/animation.js"></script>
+      <script src="js/chart.js"></script>
+
+
+   </body>
+</html>
